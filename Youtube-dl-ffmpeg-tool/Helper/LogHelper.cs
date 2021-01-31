@@ -14,8 +14,7 @@ namespace Youtube_dl_ffmpeg_tool.Helper
 
         public static void AddLog(string log)
         {
-            var currentTime = DateTime.Now.ToString("dd/MM/yyyy HH:MM:ss");
-            ThreadHelper.AddLog(Form, ListBox, $"[{currentTime}] -- {log}");
+            ThreadHelper.AddLog(Form, ListBox, $"[{DateTime.Now.ToString("dd/MM/yyyy HH:MM:ss")}] -- {log}");
         }
     }
 }
